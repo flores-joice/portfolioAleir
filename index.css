@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+body {
+  width: 100vw;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  z-index: 2;
+}
+
+nav-list {
+  width: 20vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.logo {
+  height: 10vh;
+}
+
+.bg-1 {
+  width: 100vw;
+  height: 90vh;
+  background-image: url("./imgs/barbearia.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.bg-2 {
+  background-color: #069499;
+}
+
+.bg-opacity {
+  width: 100vw;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box-contanto {
+  width: 80vw;
+}
+
+.box-quemSou {
+  height: 80vh;
+}
+
+.img-whats > img {
+  height: 5vh;
+}
+
+.img-box > img {
+  height: 50vh;
+  width: 15vw;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bg-opacity {
+    height: 60vh;
+  }
+  .logo {
+    height: 10vh;
+  }
+  .box-contanto {
+    width: 80vw;
+  }
+  .box-quemSou {
+    height: 30vh;
+  }
+  .box-top {
+    height: 50vh;
+  }
+  .img-whats > img {
+    width: 3vw;
+    height: 3vh;
+    z-index: 0;
+  }
+  .img-box > img {
+    width: 50vw;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bg-opacity {
+    height: 100vh;
+  }
+  .logo {
+    height: 10vh;
+  }
+  .box-contanto {
+    width: 80vw;
+  }
+  .box-quemSou {
+    height: 65vh;
+  }
+  .box-top {
+    height: 100vh;
+  }
+  .img-whats > img {
+    width: 7vw;
+    z-index: 0;
+  }
+  .img-box > img {
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=index.css.map */
