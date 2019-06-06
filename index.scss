@@ -12,6 +12,7 @@ p{
 }
 nav{
   z-index: 2;
+  top: 0;
 
   &-list{
     width: 20vw;
@@ -31,6 +32,7 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
+    margin-top: 3rem;
   }
   &-2{
     background-color: #069499;

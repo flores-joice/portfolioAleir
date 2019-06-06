@@ -16,6 +16,7 @@ p {
 
 nav {
   z-index: 2;
+  top: 0;
 }
 
 nav-list {
@@ -35,6 +36,7 @@ nav-list {
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
+  margin-top: 3rem;
 }
 
 .bg-2 {
