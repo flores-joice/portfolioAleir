@@ -1,3 +1,6 @@
+$cor-primaria: #2c2b29;
+$cor-secundaria: #95420b;
+
 *{
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
@@ -13,12 +16,8 @@ p{
 nav{
   z-index: 2;
   top: 0;
-
-  &-list{
-    width: 20vw;
-    justify-content: space-around;
-  }
 }
+
 
 .logo {
   height: 10vh;
@@ -37,11 +36,7 @@ nav{
   &-2{
     background-color: #069499;
   }
-  &-opacity{
-    width: 100%;
-    height: 94vh;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+ 
 }
 
 .box{
@@ -51,6 +46,7 @@ nav{
   &-quemSou{
     height: 80vh;
   }
+
 }
 
 .img{
@@ -63,13 +59,15 @@ nav{
   }
 }
 
+.portfolio{
+  background-color: $cor-primaria;
+}
+
 @media (max-width: 1024px) {
   nav{
     justify-content: space-between;
   }
-  .bg-opacity{
-    height: 60vh;
-  }
+ 
   .logo{
     height: 10vh;
   }
@@ -102,21 +100,25 @@ nav{
   nav{
     justify-content: space-between;
   }
-  .bg-opacity{
-    height: 100vh;
+
+  .bg{
+    &-1{
+      width: 100%;
+      height: 60vh;
+      background-size: 100% 60vh;
+    }
+ 
   }
   .logo{
     height: 10vh;
   }
   .box{
-    &-contanto{
-      width: 80vw;
-    }
     &-quemSou{
       height: 65vh;
     }
     &-top{
-      height: 100vh;
+      height: 60vh;
+      margin-top: 6rem;
     }
   }
   .img{
@@ -130,8 +132,3 @@ nav{
     }
   }
 }
-
-
-
-
-
