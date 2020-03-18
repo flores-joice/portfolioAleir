@@ -74,13 +74,13 @@ nav a:hover {
 }
 
 .quemSomos p {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 2em;
   left: -5rem;
 }
 
 .quemSomos h3 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 3em;
 }
 
@@ -98,13 +98,30 @@ nav a:hover {
 }
 
 .servicos h3 {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 4em;
+}
+
+.servicos > div {
+  height: 80vh;
+}
+
+.servicos p {
+  font-family: 'Kalam', cursive;
+  font-size: 2em;
+}
+
+.servicos-corte {
+  background: url(./imgs/servicos-corte.jpg), rgba(0, 0, 0, 0.425);
+  background-repeat: no-repeat, none;
+  background-size: cover;
+  -webkit-transition: background 2s;
+  transition: background 2s;
 }
 
 .servicos .box {
   height: 40vh;
-  width: 33%;
+  width: 20%;
 }
 
 .portfolio {

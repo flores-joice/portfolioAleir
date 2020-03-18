@@ -78,13 +78,13 @@ nav{
 
 
   & p{
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 2em;
     left: -5rem;
   }
 
   & h3{
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 3em;
   }
 
@@ -100,15 +100,42 @@ nav{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
+  
 
   & h3{
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Kalam', cursive;
     font-size: 4em;
+    
+  }
+
+  & > div{
+    height: 80vh;
+  }
+
+  & p{
+    font-family: 'Kalam', cursive;
+    font-size: 2em;
+  }
+
+  &-corte{
+    background: url(./imgs/servicos-corte.jpg),rgba(0, 0, 0, 0.425);
+    background-repeat: no-repeat, none;
+    background-size: cover;
+    transition: background 2s;
+    &:hover{
+      background:;
+    }
+
   }
 
   & .box{
+    // background: rgb(68, 68, 68);
     height: 40vh;
-    width: 33%;
+    width: 20%;
+    // transition: background 2s;
+
+
+    
   }
 }
 
