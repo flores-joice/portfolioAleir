@@ -267,8 +267,9 @@ nav a:hover {
   }
   .quemSomos div > p {
     font-size: 1rem;
-    width: 90vw;
+    width: 86vw;
     margin-left: 2rem;
+    padding: 1.5rem 0 0 5rem;
   }
   .servicos {
     width: 100vw;
