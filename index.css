@@ -1,90 +1,182 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
-  line-height: 1.8; }
+  line-height: 1.8;
+}
 
 body {
-  width: 100%; }
+  width: 100%;
+}
 
 p {
-  margin: 0; }
+  margin: 0;
+}
 
 nav {
   z-index: 2;
-  top: 0; }
+  top: 0;
+  background-color: rgba(63, 63, 63, 0.507);
+}
+
+nav a {
+  font-size: 1em;
+  color: white;
+}
+
+nav a:hover {
+  color: #99ff00;
+}
 
 .logo {
-  height: 10vh; }
+  height: 10vh;
+}
 
 .bg-1 {
   width: 100%;
-  height: 94vh;
+  height: 100vh;
   background-image: url("./imgs/bannerHipster.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 94vh;
+  background-size: 100%;
   color: #ffffff;
-  margin-top: 3rem; }
+  background-position: center;
+}
+
 .bg-2 {
-  background-color: #069499; }
+  background-color: #069499;
+}
 
 .box-contanto {
-  width: 80vw; }
+  width: 80vw;
+}
+
 .box-quemSou {
-  height: 80vh; }
+  height: 80vh;
+}
 
 .img-whats > img {
-  height: 5vh; }
+  height: 5vh;
+}
+
 .img-box > img {
   height: 50vh;
-  width: 15vw; }
+  width: 15vw;
+}
+
+.quemSomos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./imgs/background-gray.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.quemSomos p {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  left: -5rem;
+}
+
+.quemSomos h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 3em;
+}
+
+.quemSomos div {
+  height: 97vh;
+}
+
+.servicos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./imgs/servicos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.servicos h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 4em;
+}
+
+.servicos .box {
+  height: 40vh;
+  width: 33%;
+}
 
 .portfolio {
-  background-color: #2c2b29; }
+  background-color: #2c2b29;
+  height: 100vh;
+}
+
+.portfolio img {
+  height: 80vh;
+  width: auto;
+}
+
+.carousel-control-prev {
+  left: -3.5rem;
+}
 
 @media (max-width: 1024px) {
   nav {
-    justify-content: space-between; }
-
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .logo {
-    height: 10vh; }
-
+    height: 10vh;
+  }
   .box-contanto {
-    width: 80vw; }
+    width: 80vw;
+  }
   .box-quemSou {
-    height: 30vh; }
+    height: 30vh;
+  }
   .box-top {
-    height: 50vh; }
-
+    height: 50vh;
+  }
   .img-whats > img {
     width: 3vw;
     height: 3vh;
-    z-index: 0; }
+    z-index: 0;
+  }
   .img-box > img {
     width: 50vw;
-    height: 20vh; } }
+    height: 20vh;
+  }
+}
+
 @media (max-width: 500px) {
   nav {
-    justify-content: space-between; }
-
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .bg-1 {
     width: 100%;
     height: 60vh;
-    background-size: 100% 60vh; }
-
+    background-size: 100% 60vh;
+  }
   .logo {
-    height: 10vh; }
-
+    height: 10vh;
+  }
   .box-quemSou {
-    height: 65vh; }
+    height: 65vh;
+  }
   .box-top {
     height: 60vh;
-    margin-top: 6rem; }
-
+    margin-top: 6rem;
+  }
   .img-whats > img {
     width: 7vw;
-    z-index: 0; }
+    z-index: 0;
+  }
   .img-box > img {
-    height: 40vh; } }
-
+    height: 40vh;
+  }
+}
 /*# sourceMappingURL=index.css.map */

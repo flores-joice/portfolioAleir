@@ -16,6 +16,15 @@ p{
 nav{
   z-index: 2;
   top: 0;
+  background-color: rgba(63, 63, 63, 0.507);
+  & a{
+    font-size: 1em;
+    color: white;
+
+    &:hover{
+      color: rgb(153, 255, 0);
+    }
+  }
 }
 
 
@@ -26,12 +35,12 @@ nav{
 .bg{
   &-1{
     width: 100%;
-    height: 94vh;
-    background-image: url('./imgs/men.png') ;
+    height: 100vh;
+    background-image: url('./imgs/bannerHipster.jpg') ;
     background-repeat: no-repeat;
-    background-size: 100% 94vh;
+    background-size: 100%;
     color: #ffffff;
-    margin-top: 3rem;
+    background-position: center;
   }
   &-2{
     background-color: #069499;
@@ -59,8 +68,62 @@ nav{
   }
 }
 
+.quemSomos{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./imgs/background-gray.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+
+
+  & p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    left: -5rem;
+  }
+
+  & h3{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3em;
+  }
+
+  & div{
+    height: 97vh;
+  }
+}
+
+.servicos{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./imgs/servicos.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+
+  & h3{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4em;
+  }
+
+  & .box{
+    height: 40vh;
+    width: 33%;
+  }
+}
+
 .portfolio{
   background-color: $cor-primaria;
+  height: 100vh;
+
+  & img{
+    height: 80vh;
+    width: auto;
+  }
+}
+
+.carousel-control-prev{
+  left: -3.5rem;
 }
 
 @media (max-width: 1024px) {
