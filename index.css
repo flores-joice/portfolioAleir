@@ -313,14 +313,14 @@ nav a:hover {
   }
   .portfolio {
     background-color: #2c2b29;
-    height: 90vh;
+    height: 80vh;
   }
   .portfolio h3 {
     font-size: 1em;
     padding: 1rem;
   }
   .portfolio img {
-    height: 70vh;
+    height: 80%;
     width: 50vw;
   }
   .carousel-control-prev {
