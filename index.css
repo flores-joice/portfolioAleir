@@ -1,13 +1,13 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Baloo Bhai 2', cursive;
   font-size: 15px;
   line-height: 1.8;
 }
 
 body {
-  width: 100%;
+  width: 100vw;
 }
 
 p {
@@ -34,17 +34,13 @@ nav a:hover {
 }
 
 .bg-1 {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-image: url("./imgs/bannerHipster.jpg");
+  background-image: url("./imgs/bannerHipster1.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color: #ffffff;
   background-position: center;
-}
-
-.bg-2 {
-  background-color: #069499;
 }
 
 .box-contanto {
@@ -73,19 +69,20 @@ nav a:hover {
   background-position: bottom;
 }
 
-.quemSomos p {
-  font-family: 'Kalam', cursive;
-  font-size: 2em;
-  left: -5rem;
-}
-
 .quemSomos h3 {
-  font-family: 'Kalam', cursive;
   font-size: 3em;
+  padding: 2rem;
 }
 
 .quemSomos div {
   height: 97vh;
+  width: 100vw;
+}
+
+.quemSomos div p {
+  width: 60vw;
+  padding: 2rem 0 0 5rem;
+  font-size: 2em;
 }
 
 .servicos {
@@ -97,31 +94,83 @@ nav a:hover {
   background-position: bottom;
 }
 
-.servicos h3 {
-  font-family: 'Kalam', cursive;
-  font-size: 4em;
-}
-
 .servicos > div {
-  height: 80vh;
-}
-
-.servicos p {
-  font-family: 'Kalam', cursive;
-  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .servicos-corte {
-  background: url(./imgs/servicos-corte.jpg), rgba(0, 0, 0, 0.425);
-  background-repeat: no-repeat, none;
-  background-size: cover;
-  -webkit-transition: background 2s;
-  transition: background 2s;
+  background: url(./imgs/servicos-corte.jpg);
+}
+
+.servicos-corte:hover {
+  opacity: 0.5;
+}
+
+.servicos-barba {
+  background: url(./imgs/servicos-barba.jpg);
+}
+
+.servicos-barba:hover {
+  opacity: 0.5;
+}
+
+.servicos-luzes {
+  background: url(./imgs/servicos-luzes.jpg);
+}
+
+.servicos-luzes:hover {
+  opacity: 0.5;
+}
+
+.servicos-alisamento {
+  background: url(./imgs/servicos-alisamento.jpg);
+}
+
+.servicos-alisamento:hover {
+  opacity: 0.5;
+}
+
+.servicos-sobrancelha {
+  background: url(./imgs/servicos-sobrancelha.jpg);
+}
+
+.servicos-sobrancelha:hover {
+  opacity: 0.5;
+}
+
+.servicos h3 {
+  font-size: 4em;
+  padding: 2rem 5rem;
+}
+
+.servicos > div {
+  height: 60vh;
+  padding: 0 5rem;
 }
 
 .servicos .box {
   height: 40vh;
   width: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.servicos .box > p {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+
+#carouselExampleControls {
+  width: 25%;
 }
 
 .portfolio {
@@ -129,13 +178,20 @@ nav a:hover {
   height: 100vh;
 }
 
+.portfolio h3 {
+  color: white;
+  width: 100vw;
+  font-size: 3em;
+  padding: 2rem;
+}
+
 .portfolio img {
-  height: 80vh;
-  width: auto;
+  height: 70vh;
+  width: 20vw;
 }
 
 .carousel-control-prev {
-  left: -3.5rem;
+  left: -5rem;
 }
 
 @media (max-width: 1024px) {
@@ -181,12 +237,9 @@ nav a:hover {
   .logo {
     height: 10vh;
   }
-  .box-quemSou {
-    height: 65vh;
-  }
   .box-top {
     height: 60vh;
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
   .img-whats > img {
     width: 7vw;
@@ -194,6 +247,85 @@ nav a:hover {
   }
   .img-box > img {
     height: 40vh;
+  }
+  .quemSomos {
+    width: 100vw;
+    height: 50vh;
+    background-position: initial;
+  }
+  .quemSomos p {
+    font-size: 1em;
+  }
+  .quemSomos h3 {
+    font-size: 1em;
+    padding: 1rem;
+  }
+  .quemSomos div {
+    height: 30vh;
+    width: 100vw;
+  }
+  .quemSomos div > p {
+    font-size: 1rem;
+    width: 90vw;
+    margin-left: 2rem;
+  }
+  .servicos {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  }
+  .servicos h3 {
+    font-size: 1em;
+    padding: 1rem;
+  }
+  .servicos > div {
+    height: 100vw;
+    padding: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .servicos .box {
+    height: 20vh;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .servicos .box > p {
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+  }
+  #carouselExampleControls {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio {
+    background-color: #2c2b29;
+    height: 90vh;
+  }
+  .portfolio h3 {
+    font-size: 1em;
+    padding: 1rem;
+  }
+  .portfolio img {
+    height: 70vh;
+    width: 50vw;
+  }
+  .carousel-control-prev {
+    left: -3rem;
+  }
+  .carousel-control-next {
+    right: -3rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

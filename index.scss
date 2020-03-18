@@ -3,16 +3,18 @@ $cor-secundaria: #95420b;
 
 *{
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  font-family: 'Baloo Bhai 2', cursive;
   font-size: 15px;
   line-height: 1.8;
 }
 body {
-  width: 100%;
+  width: 100vw;
 }
+
 p{
   margin: 0;
 }
+
 nav{
   z-index: 2;
   top: 0;
@@ -27,25 +29,20 @@ nav{
   }
 }
 
-
 .logo {
   height: 10vh;
 }
 
 .bg{
   &-1{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url('./imgs/bannerHipster1.jpg') ;
     background-repeat: no-repeat;
     background-size: 100%;
     color: #ffffff;
     background-position: center;
-  }
-  &-2{
-    background-color: #069499;
-  }
- 
+  } 
 }
 
 .box{
@@ -76,20 +73,22 @@ nav{
   background-size: 100%;
   background-position: bottom;
 
-
-  & p{
-    font-family: 'Kalam', cursive;
-    font-size: 2em;
-    left: -5rem;
-  }
-
   & h3{
-    font-family: 'Kalam', cursive;
     font-size: 3em;
+    padding: 2rem;
   }
 
   & div{
     height: 97vh;
+    width: 100vw;
+
+    & p{
+      width: 60vw;
+      padding: 2rem 0 0 5rem;
+
+      font-size: 2em;
+  
+    }
   }
 }
 
@@ -100,57 +99,97 @@ nav{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  
 
+  & > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-corte{
+    background: url(./imgs/servicos-corte.jpg);
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &-barba{
+    background: url(./imgs/servicos-barba.jpg);
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &-luzes{
+    background: url(./imgs/servicos-luzes.jpg);
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &-alisamento{
+    background: url(./imgs/servicos-alisamento.jpg);
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+
+  &-sobrancelha{
+    background: url(./imgs/servicos-sobrancelha.jpg);
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  
   & h3{
-    font-family: 'Kalam', cursive;
     font-size: 4em;
+    padding: 2rem 5rem;
     
   }
 
   & > div{
-    height: 80vh;
-  }
-
-  & p{
-    font-family: 'Kalam', cursive;
-    font-size: 2em;
-  }
-
-  &-corte{
-    background: url(./imgs/servicos-corte.jpg),rgba(0, 0, 0, 0.425);
-    background-repeat: no-repeat, none;
-    background-size: cover;
-    transition: background 2s;
-    &:hover{
-      background:;
-    }
+    height: 60vh;
+    padding: 0 5rem;
 
   }
-
+  
   & .box{
-    // background: rgb(68, 68, 68);
     height: 40vh;
     width: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
     // transition: background 2s;
+    & > p{
 
-
-    
+      font-size: 2em;
+      color: white;
+      font-weight: bold;
+    }
   }
+  
 }
-
+#carouselExampleControls{
+  width: 25%;
+}
 .portfolio{
   background-color: $cor-primaria;
   height: 100vh;
 
+  & h3{
+    color: white;
+    width: 100vw;
+    font-size: 3em;
+    padding: 2rem;
+  }
+
   & img{
-    height: 80vh;
-    width: auto;
+    height: 70vh;
+    width: 20vw;
   }
 }
 
 .carousel-control-prev{
-  left: -3.5rem;
+  left: -5rem;
 }
 
 @media (max-width: 1024px) {
@@ -203,12 +242,9 @@ nav{
     height: 10vh;
   }
   .box{
-    &-quemSou{
-      height: 65vh;
-    }
     &-top{
       height: 60vh;
-      margin-top: 6rem;
+      margin-top: 5rem;
     }
   }
   .img{
@@ -220,5 +256,94 @@ nav{
       height: 40vh;
 
     }
+  }
+  .quemSomos{
+    width: 100vw;
+    height: 50vh; 
+    background-position: initial;
+  
+    & p{
+      font-size: 1em;
+      // left: -5rem;
+    }
+  
+    & h3{
+      font-size: 1em;
+      padding: 1rem;
+    }
+  
+    & div{
+      height: 30vh;
+      width: 100vw;
+      // padding-top: 2.5rem;
+      & > p{
+        font-size: 1rem;
+        width: 90vw;
+        // margin-top: -4rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .servicos{
+    width: 100vw;
+    height: 100vh; 
+    background-size: cover;
+    
+    & h3{
+      font-size: 1em;
+      padding: 1rem;
+      
+    }
+  
+    & > div{
+      height: 100vw;
+      padding: 0 5rem;
+      display: flex;
+      flex-direction: column;
+  
+    }
+    
+    & .box{
+      height: 20vh;
+      width: 70%;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      & > p{
+        font-size: 2em;
+        color: white;
+        font-weight: bold;
+      }
+    }
+    
+  }
+
+  #carouselExampleControls{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio{
+    background-color: $cor-primaria;
+    height: 90vh;
+  
+    & h3{
+      font-size: 1em;
+      padding: 1rem;
+    }
+    & img{
+      height: 70vh;
+      width: 50vw;
+    }
+  }
+
+  .carousel-control-prev{
+    left: -3rem;
+  }
+
+  .carousel-control-next{
+    right: -3rem;
   }
 }
