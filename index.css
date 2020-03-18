@@ -281,7 +281,7 @@ nav a:hover {
     padding: 1rem;
   }
   .servicos > div {
-    height: 100vw;
+    height: 85%;
     padding: 0 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,7 +292,7 @@ nav a:hover {
             flex-direction: column;
   }
   .servicos .box {
-    height: 20vh;
+    height: 20%;
     width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
