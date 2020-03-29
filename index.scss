@@ -260,7 +260,7 @@ nav{
   }
   .quemSomos{
     width: 100vw;
-    height: 50vh; 
+    height: 37vh; 
     background-position: initial;
   
     & h3{
@@ -283,7 +283,8 @@ nav{
   .servicos{
     width: 100vw;
     height: 100vh; 
-    background-size: auto;
+    background-size: cover;
+
     
     & h3{
       font-size: 1em;
