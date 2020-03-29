@@ -254,22 +254,19 @@ nav a:hover {
     height: 50vh;
     background-position: initial;
   }
-  .quemSomos p {
-    font-size: 1em;
-  }
   .quemSomos h3 {
     font-size: 1em;
     padding: 1rem;
   }
   .quemSomos div {
-    height: 30vh;
+    height: 28vh;
     width: 100vw;
   }
   .quemSomos div > p {
     font-size: 1rem;
     width: 86vw;
     margin-left: 2rem;
-    padding: 1.5rem 0 0 5rem;
+    padding: 1rem 0 0 5rem;
   }
   .servicos {
     width: 100vw;
