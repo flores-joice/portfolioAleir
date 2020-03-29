@@ -270,8 +270,8 @@ nav a:hover {
   }
   .servicos {
     width: 100vw;
-    height: 100%;
-    background-size: cover;
+    height: 100vh;
+    background-size: contain;
   }
   .servicos h3 {
     font-size: 1em;
