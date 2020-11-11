@@ -187,7 +187,6 @@ nav a:hover {
 
 .portfolio img {
   height: 70vh;
-  width: 20vw;
 }
 
 #insta{
@@ -197,6 +196,12 @@ nav a:hover {
 .carousel-control-prev {
   left: -5rem;
 }
+
+.carousel-control-next {
+  left: 333px;
+}
+
+
 
 @media (max-width: 1024px) {
   nav {
