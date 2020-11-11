@@ -38,7 +38,7 @@ nav a:hover {
   height: 90vh;
   background-image: url("./imgs/bannerHipster.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #ffffff;
   background-position: center;
 }
@@ -65,7 +65,7 @@ nav a:hover {
   height: 100vh;
   background-image: url(./imgs/background-gray.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom;
 }
 
@@ -233,6 +233,11 @@ nav a:hover {
 }
 
 @media (max-width: 500px) {
+
+  body{
+    width: 100%t;
+  }
+
   nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -241,16 +246,11 @@ nav a:hover {
   .bg-1 {
     background-image: url(./imgs/bannerHipster.jpg);
     width: 100%;
-    height: 60vh;
-    background-size: 100% 60vh;
   }
   .logo {
     height: 10vh;
   }
-  .box-top {
-    height: 60vh;
-    margin-top: 5rem;
-  }
+  
   .img-whats > img {
     width: 7vw;
     z-index: 0;
@@ -272,7 +272,7 @@ nav a:hover {
     width: 100vw;
   }
   .quemSomos div > p {
-    font-size: 1rem;
+    font-size: 12px;;
     width: 86vw;
     margin-left: 2rem;
     padding: .5rem 0 0 5rem;
@@ -333,7 +333,7 @@ nav a:hover {
     left: -3rem;
   }
   .carousel-control-next {
-    right: -3rem;
+    left: 205px;
   }
 }
 /*# sourceMappingURL=index.css.map */
