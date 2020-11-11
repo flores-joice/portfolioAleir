@@ -17,7 +17,7 @@ p {
 nav {
   z-index: 2;
   top: 0;
-  background-color: rgba(63, 63, 63, 0.507);
+  background-color: rgba(63, 63, 63);
 }
 
 nav a {
@@ -35,8 +35,8 @@ nav a:hover {
 
 .bg-1 {
   width: 100vw;
-  height: 100vh;
-  background-image: url("./imgs/bannerHipster1.jpg");
+  height: 90vh;
+  background-image: url("./imgs/bannerHipster.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   color: #ffffff;
@@ -90,8 +90,8 @@ nav a:hover {
   height: 100vh;
   background-image: url(./imgs/servicos.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  background-size: 100rem;
+  background-position: top;
 }
 
 .servicos > div {
@@ -188,6 +188,10 @@ nav a:hover {
 .portfolio img {
   height: 70vh;
   width: 20vw;
+}
+
+#insta{
+  height: 5vh;
 }
 
 .carousel-control-prev {
